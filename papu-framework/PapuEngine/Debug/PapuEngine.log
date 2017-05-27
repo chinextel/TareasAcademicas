@@ -1,0 +1,21 @@
+﻿  TextureCache.cpp
+  Sprite.cpp
+  ResourceManager.cpp
+  picoPNG.cpp
+  MainGame.cpp
+c:\users\luis miguel fung\papu-framework\papuengine\maingame.cpp(11): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\luis miguel fung\papu-framework\papuengine\maingame.cpp(75): warning C4305: '+=': truncation from 'double' to 'float'
+c:\users\luis miguel fung\papu-framework\papuengine\maingame.cpp(118): warning C4018: '<': signed/unsigned mismatch
+  main.cpp
+  IOManager.cpp
+c:\users\luis miguel fung\papu-framework\papuengine\iomanager.cpp(15): warning C4244: 'initializing': conversion from 'std::streamoff' to 'int', possible loss of data
+c:\users\luis miguel fung\papu-framework\papuengine\iomanager.cpp(18): warning C4244: '-=': conversion from 'std::streamoff' to 'int', possible loss of data
+  ImageLoader.cpp
+c:\users\luis miguel fung\papu-framework\papuengine\imageloader.cpp(41): warning C4244: '=': conversion from 'unsigned long' to 'float', possible loss of data
+c:\users\luis miguel fung\papu-framework\papuengine\imageloader.cpp(42): warning C4244: '=': conversion from 'unsigned long' to 'float', possible loss of data
+  GLS_Program.cpp
+  Error.cpp
+  Generating Code...
+c:\users\luis miguel fung\papu-framework\papuengine\iomanager.cpp(22): warning C4715: 'IOManager::readFileToBuffer': not all control paths return a value
+  PapuEngine.vcxproj -> C:\Users\Luis Miguel Fung\papu-framework\Debug\PapuEngine.exe
+  PapuEngine.vcxproj -> C:\Users\Luis Miguel Fung\papu-framework\Debug\PapuEngine.pdb (Partial PDB)

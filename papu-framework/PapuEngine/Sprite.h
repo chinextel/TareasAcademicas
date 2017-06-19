@@ -2,6 +2,7 @@
 #include <GL\glew.h>
 #include <string>
 #include "GLTexture.h"
+
 using namespace std;
 class Sprite
 {

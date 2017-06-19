@@ -1,14 +1,15 @@
 #include "Sprite.h"
 #include "Vertex.h"
-#include <cstddef>
 #include "ResourceManager.h"
+#include <cstddef>
 
 Sprite::Sprite()
 {
 	_vobID = 0;
 }
 
-void Sprite::init(float x, float y, int width ,int height, string texturePath)
+void Sprite::init(float x, float y, int width,
+					int height, string texturePath)
 {
 	_x = x;
 	_y = y;
@@ -22,24 +23,19 @@ void Sprite::init(float x, float y, int width ,int height, string texturePath)
 	_texture = ResourceManager::getTexture(texturePath);
 
 	Vertex vertexData[6];
-	/*
 	vertexData[0].setUV(1.0f, 1.0f);
 	vertexData[1].setUV(0.0f, 1.0f);
 	vertexData[2].setUV(0.0f, 0.0f);
 	vertexData[3].setUV(0.0f, 0.0f);
 	vertexData[4].setUV(1.0f, 0.0f);
 	vertexData[5].setUV(1.0f, 1.0f);
-	*/
-	vertexData[0].setUV(1.0f, 0.0f);
-	vertexData[1].setUV(0.0f, 0.0f);
-	vertexData[2].setUV(0.0f, 1.0f);
-	vertexData[3].setUV(0.0f, 1.0f);
-	vertexData[4].setUV(1.0f, 1.0f);
-	vertexData[5].setUV(1.0f, 0.0f);
 
-	vertexData[0].setPosition(_x + _width, _y + _height);	
-	vertexData[1].setPosition(_x, _y + _height);	
+	vertexData[0].setPosition(_x + _width, _y + _height);
+	
+	vertexData[1].setPosition(_x, _y + _height);
+	
 	vertexData[2].setPosition(_x, _y);
+	
 	vertexData[3].setPosition(_x, _y);
 	vertexData[4].setPosition(_x + _width, _y);
 	vertexData[5].setPosition(_x + _width, _y + _height);
@@ -62,9 +58,10 @@ void Sprite::init(float x, float y, int width ,int height, string texturePath)
 void Sprite::draw()
 {
 	glBindTexture(GL_TEXTURE_2D, _texture.id);
-
 	glBindBuffer(GL_ARRAY_BUFFER, _vobID);
-	glEnableVertexAttribArray(0);
+	/*glEnableVertexAttribArray(0);
+	glEnableVertexAttribArray(1);
+	glEnableVertexAttribArray(2);
 	//primer atributo position
 	glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, sizeof(Vertex), 
 							(void*)offsetof(Vertex,position));
@@ -76,12 +73,14 @@ void Sprite::draw()
 	//tercer atributo UV
 	glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, sizeof(Vertex),
 		(void*)offsetof(Vertex, uv));
+		*/
 
 	glDrawArrays(GL_TRIANGLES,0,6);
 	glDisableVertexAttribArray(0);
-	glBindBuffer(GL_ARRAY_BUFFER, 0);
+	glDisableVertexAttribArray(1);
+	glDisableVertexAttribArray(2);
 
-	
+	glBindBuffer(GL_ARRAY_BUFFER, 0);
 }
 
 Sprite::~Sprite()

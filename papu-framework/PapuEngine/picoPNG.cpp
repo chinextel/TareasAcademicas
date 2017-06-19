@@ -531,7 +531,3 @@ int decodePNG(std::vector<unsigned char>& out_image, unsigned long& image_width,
 	image_width = decoder.info.width; image_height = decoder.info.height;
 	return decoder.error;
 }
-
-
-
-

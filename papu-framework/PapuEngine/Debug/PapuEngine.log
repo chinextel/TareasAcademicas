@@ -1,21 +1,45 @@
-﻿  TextureCache.cpp
+﻿  Zombie.cpp
+  Window.cpp
+  TextureCache.cpp
+  SpriteBacth.cpp
+c:\users\luis miguel fung\papu-framework\papuengine\spritebacth.cpp(15): warning C4018: '<': signed/unsigned mismatch
+c:\users\luis miguel fung\papu-framework\papuengine\spritebacth.cpp(44): warning C4018: '<': signed/unsigned mismatch
+c:\users\luis miguel fung\papu-framework\papuengine\spritebacth.cpp(72): warning C4018: '<': signed/unsigned mismatch
   Sprite.cpp
   ResourceManager.cpp
+  Player.cpp
   picoPNG.cpp
+  PapuEngine.cpp
   MainGame.cpp
-c:\users\luis miguel fung\papu-framework\papuengine\maingame.cpp(11): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-c:\users\luis miguel fung\papu-framework\papuengine\maingame.cpp(75): warning C4305: '+=': truncation from 'double' to 'float'
-c:\users\luis miguel fung\papu-framework\papuengine\maingame.cpp(118): warning C4018: '<': signed/unsigned mismatch
+c:\users\luis miguel fung\papu-framework\papuengine\maingame.cpp(33): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\luis miguel fung\papu-framework\papuengine\maingame.cpp(39): warning C4018: '<': signed/unsigned mismatch
+c:\users\luis miguel fung\papu-framework\papuengine\maingame.cpp(102): warning C4018: '<': signed/unsigned mismatch
+c:\users\luis miguel fung\papu-framework\papuengine\maingame.cpp(131): warning C4244: 'argument': conversion from 'Sint32' to 'float', possible loss of data
+c:\users\luis miguel fung\papu-framework\papuengine\maingame.cpp(245): warning C4018: '<': signed/unsigned mismatch
   main.cpp
+  Level.cpp
+c:\users\luis miguel fung\papu-framework\papuengine\level.cpp(38): warning C4018: '<': signed/unsigned mismatch
+c:\users\luis miguel fung\papu-framework\papuengine\level.cpp(40): warning C4018: '<': signed/unsigned mismatch
+c:\users\luis miguel fung\papu-framework\papuengine\level.cpp(64): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\luis miguel fung\papu-framework\papuengine\level.cpp(65): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
   IOManager.cpp
 c:\users\luis miguel fung\papu-framework\papuengine\iomanager.cpp(15): warning C4244: 'initializing': conversion from 'std::streamoff' to 'int', possible loss of data
 c:\users\luis miguel fung\papu-framework\papuengine\iomanager.cpp(18): warning C4244: '-=': conversion from 'std::streamoff' to 'int', possible loss of data
+  InputManager.cpp
   ImageLoader.cpp
-c:\users\luis miguel fung\papu-framework\papuengine\imageloader.cpp(41): warning C4244: '=': conversion from 'unsigned long' to 'float', possible loss of data
-c:\users\luis miguel fung\papu-framework\papuengine\imageloader.cpp(42): warning C4244: '=': conversion from 'unsigned long' to 'float', possible loss of data
+c:\users\luis miguel fung\papu-framework\papuengine\imageloader.cpp(36): warning C4244: '=': conversion from 'unsigned long' to 'float', possible loss of data
+c:\users\luis miguel fung\papu-framework\papuengine\imageloader.cpp(37): warning C4244: '=': conversion from 'unsigned long' to 'float', possible loss of data
+  Human.cpp
+c:\users\luis miguel fung\papu-framework\papuengine\human.cpp(14): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\luis miguel fung\papu-framework\papuengine\human.cpp(28): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   GLS_Program.cpp
   Error.cpp
+  Camera2D.cpp
+  Bullet.cpp
   Generating Code...
-c:\users\luis miguel fung\papu-framework\papuengine\iomanager.cpp(22): warning C4715: 'IOManager::readFileToBuffer': not all control paths return a value
+  Compiling...
+  Agent.cpp
+c:\users\luis miguel fung\papu-framework\papuengine\agent.cpp(64): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+  Generating Code...
   PapuEngine.vcxproj -> C:\Users\Luis Miguel Fung\papu-framework\Debug\PapuEngine.exe
   PapuEngine.vcxproj -> C:\Users\Luis Miguel Fung\papu-framework\Debug\PapuEngine.pdb (Partial PDB)

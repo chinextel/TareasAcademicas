@@ -2,9 +2,16 @@
 #include <SDL\SDL.h>
 #include <GL\glew.h>
 #include "GLS_Program.h"
-#include "Sprite.h"
+#include "Window.h"
+#include "Camera2D.h"
 #include <vector>
-//#include "GLTexture.h"
+#include "SpriteBacth.h"
+#include "InputManager.h"
+#include "Bullet.h"
+#include "Level.h"
+#include "Player.h"
+#include "Human.h"
+#include "Zombie.h"
 
 enum class GameState
 {
@@ -18,14 +25,22 @@ private:
 	int _witdh;
 	int _height;
 	float _time;
-	SDL_Window* _window;
+	Window _window;
 	void init();
-	//Sprite _sprite;
 	void procesInput();
 	GLS_Program _program;
-	//GLTexture _texture;
-	vector<Sprite*> _sprites;
-
+	Camera2D _camera;
+	SpriteBacth _spriteBacth;
+	InputManager _inputManager;
+	vector<Bullet> _bullets;
+	vector<Level*> _levels;
+	vector<Human*>  _humans;
+	vector<Zombie*> _zombies;
+	Player* _player;
+	int _currenLevel;
+	void initLevel();
+	void updateAgents();
+	int _numBala; //creamos una nueva variable llamada _numBala
 public:
 	MainGame();
 	~MainGame();
@@ -35,4 +50,6 @@ public:
 	void draw();
 	void update();
 };
+
+
 

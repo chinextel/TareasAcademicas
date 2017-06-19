@@ -1,9 +1,9 @@
 #include "IOManager.h"
 #include <fstream>
+using namespace std;
 
 bool IOManager::readFileToBuffer(string filePath,
-	vector <unsigned char>& buffer)
-{
+	vector<unsigned char>& buffer) {
 	ifstream file(filePath, ios::binary);
 
 	if (file.fail()) {
@@ -19,5 +19,6 @@ bool IOManager::readFileToBuffer(string filePath,
 
 	buffer.resize(fileSize);
 	file.read((char *)&(buffer[0]), fileSize);
+	file.close();
+	return true;
 }
-
